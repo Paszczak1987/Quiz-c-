@@ -1,8 +1,7 @@
+#include "Question.h"
+
 #include <iostream>
-#include "pytanie.h"
 #include <fstream>
-#include <cstdlib>
-#include <cctype>
 
 void Question::load()
 {
@@ -62,4 +61,12 @@ void Question::check()
    {
       score = 0;
    }
+}
+void Question::setQuestionNr(int nr)
+{
+   question_nr = nr;
+}
+int Question::getScore()
+{
+   return score;
 }
